@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -15,7 +16,7 @@
   --text-color: #5b4c48;
   --second-color: #ddb66f;
 }
-
+/*font-family: "Pacifico", cursive;*/
 .home {
   overflow: hidden;
   min-height: 120vh;
@@ -28,7 +29,7 @@
 }
 
 .header {
-  padding: 0 80px;
+  padding: 0 120px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -47,7 +48,8 @@
   user-select: none;
 }
 .header-logo span {
-  font-size: 18px;
+  font-family: "Pacifico", cursive;
+  font-size: 16px;
   color: var(--white-color);
 }
 .header-nav {
@@ -57,12 +59,13 @@
   list-style: none;
 }
 .header-nav .nav-item:not(:last-child) {
-  margin-right: 45px;
+  margin-right: 55px;
 }
 .header-nav .nav-item .nav-link {
+  font-family: "Pacifico", cursive;
   text-decoration: none;
   color: var(--white-color);
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .header-nav .nav-item .nav-link.active {
@@ -104,8 +107,10 @@
   padding: 20px 0;
 }
 
-.home-data .home-title h1 {
-  font-size: 63px;
+.home-data .home-title h3 {
+  font-family: "Pacifico", cursive;
+  font-weight: 200;
+  font-size: 44px;
   padding: 0;
   margin: 0;
   color: var(--white-color);
@@ -113,8 +118,8 @@
 .home-data .home-title span img {
   width: 70px;
   position: absolute;
-  left: 340px;
-  top: 93px;
+  left: 131px;
+  top: 102px;
 }
 
 .home-info {
@@ -156,7 +161,7 @@
   height: auto;
   background-color: var(--first-color);
   max-width: 100%;
-  padding: 5px 50px 130px 50px;
+  padding: 65px 50px 130px 50px;
   border-top-right-radius: 70px;
   border-top-left-radius: 70px;
   transform: translateY(-100px);
@@ -172,6 +177,8 @@
   background-color: var(--first-color-alt);
   color: var(--white-color);
   font-weight: bold;
+  padding: 15px 30px;
+  box-shadow: 2px 2px 7px rgb(32, 32, 32);
 }
 
 .products .products-container .products-description .text-description {
@@ -188,10 +195,16 @@
   width: 600px;
 }
 .product-data {
+  padding-top: 10px;
   color: var(--white-color);
 }
+.product-data p {
+  font-family: "Pacifico", cursive;
+  font-size: 14px;
+}
 .product-data span {
-  font-size: 15px;
+  font-size: 16px;
+  font-family: "Pacifico", cursive;
 }
 .product {
   text-align: center;
@@ -248,31 +261,46 @@
   flex: 1;
 }
 .about-data .about-title {
-  font-size: 40px;
+  font-size: 47px;
   margin-bottom: 15px;
   color: var(--first-color-alt);
+  font-family: "Pacifico", cursive;
+  font-weight: 200;
 }
 .about-data .abou-text {
   width: 80%;
   color: var(--text-color);
   font-size: 17px;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .steps {
   transform: translateY(-140px);
   /* text-align: Center; */
   padding: 40px 40px 100px 40px;
-  background: var(--first-color);
+
+  /* background-image: url(../images/bg-coffee-beans\ 1.png); */
   border-top-right-radius: 70px;
   border-top-left-radius: 70px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(73, 45, 38, 1),
+      rgba(73, 45, 38, 0.9)
+    ),
+    url(https://images.pexels.com/photos/4109744/pexels-photo-4109744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  /* background: url(https://images.pexels.com/photos/144253/coffee-coffee-cup-porcelain-coffee-beans-144253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .steps .steps-title {
   color: var(--white-color);
-  font-size: 35px;
+  font-size: 36px;
   margin-bottom: 40px;
   text-align: center;
+  font-family: "Pacifico", cursive;
+  font-weight: 200;
 }
 
 .steps-container {
@@ -377,12 +405,12 @@
   width: 100%;
 }
 .testemonial-data .testemonial-main-title {
-  letter-spacing: 2.5px;
+  /* letter-spacing: 2.5px; */
   width: 80%;
   margin: auto;
   font-size: 25px;
   color: var(--first-color);
-  line-height: 1.6;
+  font-family: "Pacifico", cursive;
 }
 .testemonial-para {
   font-size: 15px;
@@ -404,6 +432,8 @@
   border-top-right-radius: 70px;
   border-top-left-radius: 70px;
   background-color: var(--first-color);
+  background-image: linear-gradient(rgba(73, 45, 38, 1), rgba(73, 45, 38, 0.9)),
+    url(https://images.pexels.com/photos/4109744/pexels-photo-4109744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   color: var(--white-color);
   text-align: Center;
 }
@@ -420,9 +450,16 @@
   align-items: Center;
   gap: 7px;
 }
+.footer-left span {
+  font-family: "Pacifico", cursive;
+}
 .footer-news {
   margin-top: 7px;
   font-size: 20px;
+}
+.footer-news h3 {
+  font-family: "Pacifico", cursive;
+  font-weight: 100;
 }
 
 .footer-right input {
@@ -517,16 +554,16 @@
   .home-data .data-text {
     font-size: 20px;
   }
-  .home-data .home-title h1 {
-    font-size: 40px;
+  .home-data .home-title h3 {
+    font-size: 30px;
   }
   .home-data .home-title {
     width: 350px;
   }
   .home-data .home-title span img {
     width: 40px;
-    left: 220px;
-    top: 69px;
+    left: 95px;
+    top: 82px;
   }
 }
 @media (max-width: 912px) {
@@ -552,7 +589,7 @@
 }
 @media (max-width: 848px) {
   .products {
-    padding: 15px 50px 100px 50px;
+    padding: 40px 50px 140px 50px;
   }
   .products .products-container {
     flex-direction: column;
@@ -603,8 +640,8 @@
     text-align: center;
   }
   .home-data .home-title span img {
-    left: 290px;
-    top: 70px;
+    left: 228px;
+    top: 80px;
   }
   .btn-started {
     margin: auto;
@@ -691,9 +728,9 @@
     margin: 5px auto;
   }
 }
-@media (max-width: 483px) {
+@media (max-width: 526px) {
   .products {
-    padding: 15px 50px 250px 50px;
+    padding: 65px 50px 260px 50px;
   }
   .products-group {
     flex-wrap: wrap;
