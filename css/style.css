@@ -8,6 +8,19 @@
 html {
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  width: 18px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px gray;
+  border-radius: 2px;
+  background: var(--first-color-light);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--first-color);
+  border-radius: 10px;
+}
+
 :root {
   --first-color: #492d26;
   --white-color: #fff;
@@ -19,6 +32,30 @@ html {
   --text-color: #5b4c48;
   --second-color: #ddb66f;
 }
+
+.btn-top {
+  width: 20px;
+  height: 20px;
+  padding: 30px;
+  background: var(--first-color-alt);
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: Center;
+  align-items: Center;
+  position: fixed;
+  font-size: 19px;
+  right: 30px;
+  bottom: 50px;
+  z-index: 999;
+  box-shadow: 0px 2px 50px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.4s;
+  opacity: 0;
+  border: none;
+}
+
 /*font-family: "Pacifico", cursive;*/
 .home {
   overflow: hidden;
@@ -148,7 +185,7 @@ html {
   justify-content: space-around;
   gap: 15px;
   font-weight: medium;
-  box-shadow: 0px 7px 15px 10px 0px var(--active-color);
+  box-shadow: 0px 1px 8px 0px rgb(221 182 111 / 75%);
 }
 .btn-started span {
   font-size: larger;
@@ -383,12 +420,6 @@ html {
   font-size: 25px;
 }
 
-/* shape-outside: circle(50% at 50% 50%) */
-
-/* background-image: linear-gradient(rgba(73, 45, 38, 1), rgba(73, 45, 38, 1)),
-    url("../images/bg-coffee-beans\ 1.png");
-  background-repeat: no-repeat; */
-
 .testemonial {
   padding: 30px;
   transform: translateY(50px);
@@ -497,7 +528,7 @@ html {
   justify-content: center;
   gap: 10px;
   font-weight: medium;
-  box-shadow: 0px 7px 15px 10px 0px var(--active-color);
+  box-shadow: 0px 1px 8px 0px rgb(221 182 111 / 75%);
 }
 /* .footer-right .btn .arrow1 {
   border: solid var(--first-color-alt);
@@ -714,6 +745,9 @@ html {
     font-size: 17px;
     padding: 5px 10px;
   }
+  .btn-top {
+    padding: 25px;
+  }
   .tetemonial-photo img {
     width: 100vw;
     padding: 20px;
@@ -766,6 +800,11 @@ html {
 @media (max-width: 382px) {
   .home-coffee img {
     width: 96%;
+  }
+}
+@media (max-width: 371px) {
+  .header-nav .nav-item .nav-link {
+    font-size: 12px;
   }
 }
 @media (max-width: 350px) {
